@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	 ***************************************************************
+	 * Licensed to the Apache Software Foundation (ASF) under one
+	 * or more contributor license agreements.  See the NOTICE file
+	 * distributed with this work for additional information
+	 * regarding copyright ownership.  The ASF licenses this file
+	 * to you under the Apache License, Version 2.0 (the
+	 * "License"); you may not use this file except in compliance
+	 * with the License.  You may obtain a copy of the License at
+         *
+	 *   http://www.apache.org/licenses/LICENSE-2.0
+	 * 
+	 * Unless required by applicable law or agreed to in writing,
+	 * software distributed under the License is distributed on an
+	 * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+	 * KIND, either express or implied.  See the License for the
+	 * specific language governing permissions and limitations
+	 * under the License.
+	 ***************************************************************
+   -->
+<casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <implementationName>qa.EvaluatorCasConsumer</implementationName>
+	<processingResourceMetaData>
+		<name>Evaluator CAS Consumer Descriptor</name>
+		<description>The Evaluator CAS Consumer is a CAS Consumer implementation of the Evaluator component. This is done so that the Evaluator can be incorporated into a CPE as a CAS Consumer. 
+
+The Evaluator evaluates the performance of the AAE by comparing the system outputs (AnswerScore.score values) with the gold standard outputs. It measures precision by doing the following:
+  1) Ranks the Answers according to AnswerScore.score (descending).
+  2) Selects the top N Answers (where N = the total number of correct answers that were possible for that Question).
+  3) Measures precision by computing how many of the top N ranked Answers were actually correct (based upon the gold standard).
+
+After performing these calculations, it prints the results to screen.</description>
+		<version>1.0</version>
+		<vendor>Lars Mahler</vendor>
+		<configurationParameters>
+			</configurationParameters>
+		<configurationParameterSettings>
+			</configurationParameterSettings>
+		<typeSystemDescription>
+			<imports>
+				<import name="descriptors.deiis_types"/>
+      </imports>
+		</typeSystemDescription>
+		<capabilities>
+			<capability>
+				<inputs>
+					<type allAnnotatorFeatures="true">edu.cmu.deiis.types.AnswerScore</type>
+        </inputs>
+			<outputs/>
+        <languagesSupported/>
+      </capability>
+		</capabilities>
+		<operationalProperties>
+			<modifiesCas>false</modifiesCas>
+			<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+			<outputsNewCASes>false</outputsNewCASes>
+		</operationalProperties>
+	</processingResourceMetaData>
+</casConsumerDescription>
