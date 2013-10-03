@@ -36,6 +36,9 @@
   <delegateAnalysisEngine key="AnswerScorerDescriptor">
       <import name="descriptors.AnswerScorerDescriptor"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="scnlp-lmahler-client">
+      <import name="scnlp-lmahler-client"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
 		<name>HW2 - Aggregate Analysis Engine</name>
@@ -50,6 +53,7 @@
         <node>TestElementAnnotatorDescriptor</node>
         <node>TokenAnnotatorDescriptor</node>
       <node>NgramAnnotatorDescriptor</node>
+      <node>scnlp-lmahler-client</node>
       <node>AnswerScorerDescriptor</node>
       </fixedFlow>
     </flowConstraints>

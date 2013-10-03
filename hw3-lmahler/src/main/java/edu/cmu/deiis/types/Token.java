@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Mon Sep 30 20:49:59 EDT 2013
- * XML source: C:/Users/Lars/workspace_kepler/hw3-lmahler/src/main/resources/descriptors/deiis_types.xml
+ * Updated by JCasGen Tue Oct 01 19:19:01 EDT 2013
+ * XML source: C:/Users/Lars/git/hw3-lmahler/hw3-lmahler/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class Token extends Annotation {
   /** @generated

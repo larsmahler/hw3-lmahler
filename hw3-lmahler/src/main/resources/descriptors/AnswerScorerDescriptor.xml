@@ -54,9 +54,17 @@ When the score is returned, a new AnswerScore annotation is created. This annota
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Question</type>
         <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Token</type>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.NGram</type>
+        <type allAnnotatorFeatures="true">org.cleartk.ne.type.NamedEntityMention</type>
+          <type allAnnotatorFeatures="true">org.cleartk.type.ne.NamedEntityClass</type>
+          <type allAnnotatorFeatures="true">org.cleartk.ne.type.NamedEntity</type>
+          <type allAnnotatorFeatures="true">org.cleartk.ne.type.GazetteerNamedEntityMention</type>
         </inputs>
 				<outputs>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.AnswerScore</type>
+        <type allAnnotatorFeatures="true">org.cleartk.ne.type.GazetteerNamedEntityMention</type>
+          <type allAnnotatorFeatures="true">org.cleartk.ne.type.NamedEntity</type>
+          <type allAnnotatorFeatures="true">org.cleartk.ne.type.NamedEntityMention</type>
+          <type allAnnotatorFeatures="true">org.cleartk.type.ne.NamedEntityClass</type>
         </outputs>
 			<languagesSupported/>
       </capability>
