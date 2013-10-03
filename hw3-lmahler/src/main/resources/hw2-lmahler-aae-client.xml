@@ -1,0 +1,13 @@
+<!--
+ * UIMA-AS Client Descriptor for HW2 AAE service (local implementation)
+ -->
+<customResourceSpecifier xmlns="http://uima.apache.org/resourceSpecifier">
+   <resourceClassName>org.apache.uima.aae.jms_adapter.JmsAnalysisEngineServiceAdapter</resourceClassName>
+   <parameters>
+     <parameter name="brokerURL" value="tcp://localhost:61616"/>
+     <parameter name="endpoint" value="QuestionAnsweringQueue"/>
+     <parameter name="timeout" value="5000"/>
+     <parameter name="getmetatimeout" value="5000"/>
+     <parameter name="cpctimeout" value="5000"/>
+   </parameters>
+</customResourceSpecifier>
