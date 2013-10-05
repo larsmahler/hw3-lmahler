@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.cleartk.score.type.ScoredAnnotation_Type;
 
 /** 
- * Updated by JCasGen Tue Oct 01 19:19:01 EDT 2013
+ * Updated by JCasGen Sat Oct 05 13:45:11 EDT 2013
  * @generated */
 public class TreebankNode_Type extends ScoredAnnotation_Type {
   /** @generated */
@@ -139,7 +139,7 @@ public class TreebankNode_Type extends ScoredAnnotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_children), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_children), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_children), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_children), i);
   }
    
   /** @generated */ 
@@ -176,7 +176,7 @@ public class TreebankNode_Type extends ScoredAnnotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_nodeTags), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_nodeTags), i);
-	return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_nodeTags), i);
+  return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_nodeTags), i);
   }
    
   /** @generated */ 

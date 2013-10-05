@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Tue Oct 01 19:19:01 EDT 2013
+ * Updated by JCasGen Sat Oct 05 13:45:11 EDT 2013
  * @generated */
 public class TopTreebankNode_Type extends TreebankNode_Type {
   /** @generated */
@@ -84,7 +84,7 @@ public class TopTreebankNode_Type extends TreebankNode_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_terminals), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_terminals), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_terminals), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_terminals), i);
   }
    
   /** @generated */ 

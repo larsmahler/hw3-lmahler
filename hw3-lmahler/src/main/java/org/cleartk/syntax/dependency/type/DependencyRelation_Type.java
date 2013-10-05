@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.cleartk.score.type.ScoredTOP_Type;
 
 /** 
- * Updated by JCasGen Tue Oct 01 19:19:01 EDT 2013
+ * Updated by JCasGen Sat Oct 05 13:45:11 EDT 2013
  * @generated */
 public class DependencyRelation_Type extends ScoredTOP_Type {
   /** @generated */

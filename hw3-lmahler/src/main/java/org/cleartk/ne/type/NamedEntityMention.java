@@ -12,7 +12,7 @@ import org.cleartk.score.type.ScoredAnnotation;
 
 
 /** 
- * Updated by JCasGen Tue Oct 01 19:19:01 EDT 2013
+ * Updated by JCasGen Sat Oct 05 13:45:10 EDT 2013
  * XML source: C:/Users/Lars/git/hw3-lmahler/hw3-lmahler/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class NamedEntityMention extends ScoredAnnotation {

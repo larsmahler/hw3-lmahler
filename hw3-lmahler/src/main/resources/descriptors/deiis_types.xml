@@ -5,7 +5,7 @@
   <version>1.0</version>
   <vendor/>
   <imports>
-    <import name="descriptors.cleartk_types"/>
+    <import name="org.cleartk.TypeSystem"/>
   </imports>
   <types>
     <typeDescription>
